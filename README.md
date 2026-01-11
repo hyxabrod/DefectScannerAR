@@ -1,4 +1,4 @@
-# DefectScanner AR - Spatial Home Repair Documentation
+# DefectScanner AR (Not completed project)
 
 An iOS AR application for capturing and documenting home repair defects in 3D space using ARKit.
 
