@@ -6,13 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		23FBEC7E2F0C210E00153910 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FBEC7D2F0C210E00153910 /* ARKit.framework */; };
+		23FBED102F0C6BF600153910 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 23FBED0F2F0C6BF600153910 /* Swinject */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		23FBEC6E2F0C205A00153910 /* DefectScannerAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefectScannerAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23FBEC7D2F0C210E00153910 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		23FBEC802F0C226600153910 /* Exceptions for "DefectScannerAR" folder in "DefectScannerAR" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 23FBEC6D2F0C205A00153910 /* DefectScannerAR */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		23FBEC702F0C205A00153910 /* DefectScannerAR */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				23FBEC802F0C226600153910 /* Exceptions for "DefectScannerAR" folder in "DefectScannerAR" target */,
+			);
 			path = DefectScannerAR;
 			sourceTree = "<group>";
 		};
@@ -23,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FBEC7E2F0C210E00153910 /* ARKit.framework in Frameworks */,
+				23FBED102F0C6BF600153910 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				23FBEC702F0C205A00153910 /* DefectScannerAR */,
+				23FBEC7C2F0C210E00153910 /* Frameworks */,
 				23FBEC6F2F0C205A00153910 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +65,14 @@
 				23FBEC6E2F0C205A00153910 /* DefectScannerAR.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		23FBEC7C2F0C210E00153910 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23FBEC7D2F0C210E00153910 /* ARKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +95,7 @@
 			);
 			name = DefectScannerAR;
 			packageProductDependencies = (
+				23FBED0F2F0C6BF600153910 /* Swinject */,
 			);
 			productName = DefectScannerAR;
 			productReference = 23FBEC6E2F0C205A00153910 /* DefectScannerAR.app */;
@@ -94,6 +125,9 @@
 			);
 			mainGroup = 23FBEC652F0C205A00153910;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				23FBED0E2F0C6BF600153910 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 23FBEC6F2F0C205A00153910 /* Products */;
 			projectDirPath = "";
@@ -256,6 +290,7 @@
 				DEVELOPMENT_TEAM = 7BXD56G5JJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DefectScannerAR/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -288,6 +323,7 @@
 				DEVELOPMENT_TEAM = 7BXD56G5JJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DefectScannerAR/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -332,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		23FBED0E2F0C6BF600153910 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23FBED0F2F0C6BF600153910 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23FBED0E2F0C6BF600153910 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 23FBEC662F0C205A00153910 /* Project object */;
 }
